@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Container Styles */
+.container {
+  background-color: #1e1e1e; /* Darker card background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for the card */
+  width: 90%;
+  max-width: 500px; /* Maximum width for the card */
+  text-align: center;
+}
+
+/* Title Styles */
+h1 {
+  color: #81ff61; /* Accent color for the title */
+  margin-bottom: 20px;
+}
+
+/* Question and Result Container Styles */
+#quiz-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Question Text */
+#question-text {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Choice List Styles */
+#choice-list {
+  list-style: none;
+  padding: 0;
+}
+
+#choice-list li {
+  background-color: #333333; /* Dark background for choices */
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#choice-list li:hover {
+  background-color: #90ff61; /* Highlight on hover */
+  color: #121212; /* Dark text on hover */
+}
+
+/* Button Styles */
+button {
+  background-color: #83ff61; /* Accent color for buttons */
+  color: #121212; /* Dark text for contrast */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #a5ff75; /* Slightly lighter accent color on hover */
+}
+
+button:disabled {
+  background-color: #555555; /* Disabled button color */
+  cursor: not-allowed;
+}
+
+/* Result Styles */
+#result-container {
+  margin-top: 20px;
+}
+
+#score {
+  font-size: 2rem;
+  color: #a5af4c; /* Green for the score */
+}
