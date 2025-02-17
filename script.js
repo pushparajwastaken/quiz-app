@@ -70,6 +70,21 @@ document.addEventListener("DOMContentLoaded", () => {
       options: ["1905", "1912", "1920", "1930"],
       correctAnswer: "1912",
     },
+    {
+    question: "What is the capital city of Australia?",
+    options: ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+    correctAnswer: "Canberra"
+  },
+  {
+    question: "Who wrote the play 'Romeo and Juliet'?",
+    options: ["William Shakespeare", "Charles Dickens", "Jane Austen", "Mark Twain"],
+    correctAnswer: "William Shakespeare"
+  },
+  {
+    question: "What is the chemical symbol for gold?",
+    options: ["Au", "Ag", "Fe", "Pb"],
+    correctAnswer: "Au"
+  },
   ];
 
   let currentquestionindex = 0;
