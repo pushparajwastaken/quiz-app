@@ -1,97 +1,99 @@
-/* General Styles */
+/* General Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #fff;
+  text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #121212; /* Dark background */
-  color: #e0e0e0; /* Light text */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full height of the viewport */
-  overflow: hidden; /* Prevent scrolling */
 }
 
-/* Container Styles */
+/* Container */
 .container {
-  background-color: #1e1e1e; /* Darker card background */
-  border-radius: 10px;
+  max-width: 600px;
+  margin: 50px auto;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for the card */
-  width: 90%;
-  max-width: 500px; /* Maximum width for the card */
-  text-align: center;
+  background: rgba(255, 182, 193, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.6);
 }
 
-/* Title Styles */
+/* Title */
 h1 {
-  color: #81ff61; /* Accent color for the title */
-  margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.8);
 }
 
-/* Question and Result Container Styles */
+/* Quiz Styling */
 #quiz-container {
-  display: flex;
-  flex-direction: column;
+  padding: 20px;
 }
 
-.hidden {
-  display: none;
+#question-paper {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(255, 105, 180, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
 }
 
-/* Question Text */
-#question-text {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-/* Choice List Styles */
-#choice-list {
+/* Choices */
+ul {
   list-style: none;
   padding: 0;
 }
 
-#choice-list li {
-  background-color: #333333; /* Dark background for choices */
-  margin: 10px 0;
+li {
+  background: #ff69b4;
+  color: white;
+  font-size: 1.2em;
   padding: 10px;
-  border-radius: 5px;
+  margin: 10px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: 0.3s;
 }
 
-#choice-list li:hover {
-  background-color: #90ff61; /* Highlight on hover */
-  color: #121212; /* Dark text on hover */
+li:hover {
+  background: #ff1493;
+  transform: scale(1.05);
 }
 
-/* Button Styles */
+/* Buttons */
 button {
-  background-color: #83ff61; /* Accent color for buttons */
-  color: #121212; /* Dark text for contrast */
+  background: #ff69b4;
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
+  color: white;
+  padding: 15px 20px;
+  font-size: 1.2em;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
-  font-size: 1rem;
+  transition: 0.3s;
+  margin-top: 10px;
 }
 
 button:hover {
-  background-color: #a5ff75; /* Slightly lighter accent color on hover */
+  background: #ff1493;
+  transform: scale(1.1);
 }
 
-button:disabled {
-  background-color: #555555; /* Disabled button color */
-  cursor: not-allowed;
-}
-
-/* Result Styles */
+/* Result Section */
 #result-container {
-  margin-top: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  background: rgba(255, 105, 180, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 20, 147, 0.8);
+  text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.9);
 }
 
-#score {
-  font-size: 2rem;
-  color: #a5af4c; /* Green for the score */
+/* Hide Elements */
+.hidden {
+  display: none;
 }
